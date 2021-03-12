@@ -98,7 +98,7 @@ nav ul li a:hover {
   margin-right: 30px;
 }
 .etiopia img{
-  width: 900px;
+  width: 100%;
   -webkit-box-shadow: 0px 30px 100px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 30px 100px 1px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 30px 100px 1px rgba(0, 0, 0, 0.75);
@@ -116,7 +116,6 @@ nav ul li a:hover {
 }
 
 footer {
-  padding: 4rem 0;
   background-color: #271a15;
   text-align: center;
   margin-top: 6rem;
@@ -140,10 +139,6 @@ footer ul li p {
 }
 
 @media handheld, screen and (min-width: 600px) and (max-width: 1023px) {
-  .container {
-    width: 580px;
-    height: auto;
-  }
   nav {
     width: 100%;
     margin-top: 2rem;
@@ -154,6 +149,16 @@ footer ul li p {
   nav ul li a {
     display: block;
     padding: 0.5rem 0;
+    text-align: center;
+  }
+  .container2{
+    flex-direction: column;
+  }
+  .texto1{
+    width: 95%;
+  }
+  .texto2{
+    width: 95%;
   }
 }
 
@@ -169,14 +174,19 @@ footer ul li p {
     nav ul li {
       display: block;
     }
-    nav ul li a {
+    /* nav ul li a {
       display: block;
       padding: 0.5rem 0;
-    }
-    footer {
-      height: auto;
-      flex-direction: column;
       text-align: center;
+    } */
+    .container2{
+      flex-direction: column;
+    }
+    .texto1{
+      width: 95%;
+    }
+    .texto2{
+      width: 95%;
     }
   }
 
