@@ -61,7 +61,7 @@ body {
     background: white;
   }
   .logologin{
-      margin-top: 152px;
+      margin-top: 10px;
       text-align: center;
   }
   .logologin img{
@@ -69,6 +69,7 @@ body {
       height: 150px;
   }
   .box {
+    margin-top: 65px;
     width: 370px;
     padding: 40px;
     position: absolute;
@@ -129,4 +130,10 @@ body {
   
   .box input[type="submit"]:hover {
     background: #2ecc71;
+  }
+
+  @media (max-width: 599px) {
+      .box{
+          width: 85%;
+      }
   }

@@ -68,16 +68,14 @@ nav ul li a:hover {
   height: 550px;
 }
 .banner h1 {
+  line-height: 55px;
   font-size: 60px;
   color: white;
   font-weight: bold;
   font-family: "Cinzel", serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
-  top: 205px;
-  left: 1050px;
+  top: 17%;
+  left: 60%;
 }
 .info{
   background-color:rgb(240, 178, 122);
@@ -104,6 +102,7 @@ nav ul li a:hover {
   padding: 100px 0 50px 0;
   width: 300px;
   height: 350px;
+  border-radius: 0px 200px 0px 200px;
 }
 .info p{
   padding: 0px 0 150px 0;
@@ -134,4 +133,20 @@ nav ul li a:hover {
     font-weight: bold;
     font-size: 18px;
     font-family: "Cinzel", serif;
+  }
+  @media (min-width: 600px) and (max-width: 1023px){
+    .banner h1{
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+
+  @media(max-width: 599px){
+
+    .banner h1 {
+      font-size: 20px;
+    }
+    .info{
+      width: 85%;
+    }
   }

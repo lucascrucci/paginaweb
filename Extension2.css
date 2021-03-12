@@ -68,27 +68,15 @@ body {
     height: 550px;
   }
   .banner h1 {
+    line-height: 50px;
     font-size: 60px;
     color: white;
     font-weight: bold;
     font-family: "Cinzel", serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    top: 205px;
-    left: 1050px;
+    top: 17%;
+    left: 60%;
   }
-  .variedades_cafe{
-      margin-top: 160px;
-      margin: auto;
-      width: 70%;
-  }
-.variedades_cafe p{
-    font-size: 20px;
-    line-height: 40px;
-    font-family: 'Roboto', sans-serif;
-}
 .container_cafe {
     display: flex;
     flex-direction: column;
@@ -105,6 +93,7 @@ body {
     -webkit-box-shadow: -5px 10px 25px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -5px 10px 25px 0px rgba(0,0,0,0.75);
     box-shadow: -5px 10px 25px 0px rgba(0,0,0,0.75);
+    align-items: center;
 }
 
 .arabiga p {
@@ -120,6 +109,7 @@ body {
     -webkit-box-shadow: -5px 10px 25px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -5px 10px 25px 0px rgba(0,0,0,0.75);
     box-shadow: -5px 10px 25px 0px rgba(0,0,0,0.75);
+    align-items: center;
 }
 
 .robusta p {
@@ -159,7 +149,11 @@ body {
     font-size: 18px;
     font-family: "Cinzel", serif;
   }
-  @media handheld, screen and (min-width: 600px) and (max-width: 1023px) {
+  @media (min-width: 600px) and (max-width: 1023px) {
+    .banner h1 {
+        font-size: 40px;
+        line-height: 50px;
+      }
     .container_cafe {
         width: 80%;
     }
@@ -174,7 +168,10 @@ body {
         flex-direction: column;
     }
 }
-@media handheld, screen and(max-width: 599px) {
+@media (max-width: 599px) {
+    .banner h1 {
+        font-size: 20px;
+      }
     .container_cafe {
         width: 93%;
     }
